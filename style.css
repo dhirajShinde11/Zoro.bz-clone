@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+
+}
+body{
+    cursor: none;
+}
+html,body{
+
+    height: 100%;
+    perspective: 100%;
+    width: 100% ;
+}
+#nav{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: flex-start;
+    gap: 50px;
+    position: absolute;
+    z-index: 98;
+    position: fixed;
+    
+}
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: skyblue;
+    position: fixed;
+    border-radius: 50%;
+    background: url('boruto.png') center/cover no-repeat;
+    z-index: 99;
+    
+}
+#nav img{
+    height: 50px;
+    
+}
+#Home h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#Home{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    justify-content: flex-start;
+    gap: 50px;
+    position: fixed;
+    left: 15%;
+    z-index: 98;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   
+    position: absolute;
+    
+    
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#page1 h1{
+    font-size: 100px;
+    font-weight: 500;
+    color: rgb(228, 228, 228);
+    position: relative;
+}
+#page1 h1::before{
+    content: "EAT.WATCH.ENJOY";
+    position: absolute;
+    color: #000;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke:1px #65959a;
+    z-index: -1;
+    
+
+}
+#page1 h2{
+    font-size: 100%;
+    font-weight: 500;
+    
+}
+#page1 h5{
+    font-weight: 100;
+    width: 40%;
+}
+
+
+#page2{
+    height: 200%;
+    width: 100%;
+}
+
+#scroller{
+    width: 200%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+
+}
+#scrollerin{
+    display: inline-block;
+    white-space: nowrap;
+    
+
+}
+#scroller h4{
+    display: inline-block;
+    padding-top: 50px;
+    font-size: 110px;
+    margin-right: 10px;
+    font-family: gilroy;
+    color:transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px lightblue;
+    transition: all linear 0.5s;
+
+
+}
+#scroller h4:hover{
+    color: #8A2BE2; /* Blue Violet color */
+
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to
+    {
+        transform: translateX(-50%);
+    }
+    
+}
+#trending{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-around;
+    position:  relative;
+}
+#trending img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all ease 0.6s;
+}
+#trending-in{
+    width: 50%;
+    text-align: center;
+}
+#trending-in h3{
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#trending-in p{
+    font-size: 15px;
+    line-height: 26px;
+}
+#suggest{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.card{
+    height: 60%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+    
+}
+#card1{
+    background-image: url(https://static.bunnycdn.ru/i/cache/images/2018/04/ef7eece108cfbe794eb505dc983f7fe4.jpg);
+}
+#card2{
+    background-image: url(https://static.bunnycdn.ru/i/cache/images/a/a7/a78b998dc3e77c5866340d64643d4822.jpg);
+}
+#card3{
+    background-image: url(https://static.bunnycdn.ru/i/cache/images/7/70/70fee565c977753f59d42518a5c1efd4.jpg);
+}
+#card4{
+    background-image: url(https://static.bunnycdn.ru/i/cache/images/6/61/617851794bd4f8e40c4a63a35f8bf215.jpg);
+}
+#card5{
+    background-image: url(https://static.bunnycdn.ru/i/cache/images/c/c6/c6d592dbdcd718c56db2c81903475101.jpg);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #5f1372;
+    padding: 30px;
+    padding-top: 20px;
+    opacity: 0;
+    transition: all ease 0.6s;
+
+}
+.overlay h4{
+    color: #000;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    
+}
+.overlay p{
+    color: #000;
+    font-size: 15px;
+    font-weight: 100;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,390deg);
+    transition: all ease 1s;
+    
+}
+#green-div{
+    height: 30vh;
+   background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#green-div h4{
+    width: 50%;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    
+}
+#trending img:hover{
+    transform: rotate3d(-1,1,0,380deg);
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#page3 img{
+    height: 60px;
+    position: absolute;
+    width: 60px;
+}
+#page3>p{
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+}
+#page3 #colon1{
+    
+    top: 20%;
+    left: 15%;
+}
+#page3 #colon2{
+    
+    bottom: 20%;
+    right: 15%;
+}
