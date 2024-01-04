@@ -100,6 +100,29 @@ video{
     
 
 }
+#page1 #arrow{
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(0, 94, 235);
+    background-color: transparent;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.8s;
+
+}
+#page1 #arrow:hover{
+    scale: 0.5;
+    background-color: #000;
+}
+#page1 #arrow i{
+    font-size: 30px;
+    font-weight: 900;
+}
 #page1 h2{
     font-size: 100%;
     font-weight: 500;
@@ -152,7 +175,8 @@ video{
 
 }
 #scroller h4:hover{
-    color: #8A2BE2; /* Blue Violet color */
+    color: #25af18; /* Blue Violet color */
+    -webkit-text-stroke: 0;
 
 }
 @keyframes scroll{
@@ -312,3 +336,65 @@ video{
     bottom: 20%;
     right: 15%;
 }
+#page4{
+    height: 50vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+   
+}
+.elem{
+    height: 70%;
+    width: 26%;
+    overflow: hidden; 
+    border-radius: 20px; 
+    position: relative;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.elem h4{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.8s;
+    position: absolute;
+}
+.elem h4:hover{
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+#page4 h1{
+    font-size: 90px;
+    top: -7%;
+    font-weight: 900;
+    position: absolute;
+    color: #000;
+    -webkit-text-stroke:0.1px white;
+
+}
+#footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom,rgb(252, 249, 249),rgb(0, 0, 0));
+}
+
+
+
+
+
+
+
